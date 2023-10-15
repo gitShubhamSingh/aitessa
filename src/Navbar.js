@@ -36,12 +36,6 @@ const navItems =[
         text:"Company",
         link:null,
         endIcon:<KeyboardArrowDownIcon/>
-    },
-    {
-        key:5,
-        text:"Contact",
-        link:"/contact",
-        endIcon:null
     }
 ]
 
@@ -153,7 +147,7 @@ const Navbar = (props) => {
                             >
                             <Typography>Company</Typography>
                         </AccordionSummary>
-                        <AccordionDetails sx={{backgroundColor:"#E74C3C"}}>
+                        <AccordionDetails sx={{backgroundColor:"#47d7ac"}}>
                         <ListItem key="4.1" disablePadding>
                                 <ListItemButton sx={{ color:"#fff"}} to="/company">
                                     <ListItemText
@@ -178,13 +172,7 @@ const Navbar = (props) => {
                         </AccordionDetails>
                     </Accordion>
 
-                <ListItem key="5" disablePadding>
-                    <ListItemButton sx={{ color:"#000"}} to="/contact">
-                        <ListItemText
-                            primary="Contact"
-                        />
-                    </ListItemButton>
-                </ListItem>
+              
            
             </List>
         </Box>
@@ -204,7 +192,7 @@ const Navbar = (props) => {
                             aria-label='open drawer'
                             edge="start"
                             onClick={handleDrawerToggle}
-                            sx={{mr:2, display:{ sm: 'none' }}}
+                            sx={{mr:2, display:{ md: 'none' }}}
                         >
                             <MenuIcon></MenuIcon>
                         </IconButton>
@@ -216,7 +204,7 @@ const Navbar = (props) => {
                             <Image src="/images/logo.png" width="200px"/>
                         </Typography>
                         <Box
-                            sx={{display:{xs:"none",sm:"block"}}}
+                            sx={{display:{xs:"none",sm:"none", md:"block"}}}
                         >
                             {navItems.map((item)=>(
                                 <Button 

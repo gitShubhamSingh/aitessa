@@ -2,8 +2,9 @@ import React from 'react'
 // import { Box, Container, Typography} from '@mui/material'
 // import { TypeAnimation } from 'react-type-animation'
 import Banner from './home/Banner'
-
-
+import About from './home/About'
+import Services from './Services'
+import WhyChooseUs from './WhyChooseUs'
 
 const Home = () => {
   return (
@@ -28,6 +29,9 @@ const Home = () => {
       </Container>
     </Box> */}
     <Banner/>
+    <About/>
+    <Services/>
+    <WhyChooseUs/>
    </React.Fragment>
   )
 }

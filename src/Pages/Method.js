@@ -65,7 +65,7 @@ const Method = () => {
               <ParallaxProvider>
                 <Parallax translateX={[-30, 30]}>
                   <center>
-                    <Paper elevation={24} sx={{mt:5,mr:3}}>
+                    <Paper elevation={24} sx={{mt:5,mr:7}}>
                       <Image alt="Image1" src={item.imageSrcLeft}></Image>
                     </Paper>
                   </center>
@@ -74,7 +74,7 @@ const Method = () => {
               </Grid>
 
                 <Grid item xs={12} md={6}>
-                  <Container sx={{ml:5,mt:3, '@media screen and (min-width: 10em)':{p:2}}}>
+                  <Container sx={{ml:5,mt:3,mr:3, '@media screen and (min-width: 10em)':{p:2, ml:0}}}>
                     <Typography variant="h5" sx={{mt:5, textAlign:"center", color:"#47d7ac", fontWeight:"bold"}}>{item.stepRight}</Typography>
                     <Typography variant='h4' sx={{textAlign:"center", color:"#13294b",mb:5}}>{item.stepHeadingRight}</Typography>
                     <Typography component="p" sx={{textAlign:"center"}}>{item.stepDetailsRight}</Typography>

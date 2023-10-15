@@ -11,6 +11,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AddTaskIcon from '@mui/icons-material/AddTask';
 import AddToDriveIcon from '@mui/icons-material/AddToDrive';
 
+
 import React from 'react'
 
 
@@ -23,58 +24,58 @@ const itemData = [
   {
     image:<AccessibilityIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"AI / ML",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Empower your business with our AI and ML solutions. Harness data-driven insights and automation for unparalleled efficiency and growth.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   }, 
   
   {
     image:<AccountBalanceIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"Data Science",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Transform your business with Data Science expertise. Uncover actionable insights and drive innovation through advanced analytics.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   },  
   {
     image:<AcUnitIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"App Developement",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Elevate your business with custom App Development. Craft seamless, user-centric experiences for enhanced engagement and growth.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   },  
   {
     image:<AccessAlarmIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"API Management",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Optimize operations with API Management. Streamline connections, enhance security, and drive efficiency for seamless integration.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   },  
   
   
   {
     image:<AddAPhotoIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"Data Analytics",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Uncover insights with Data Analytics expertise. Drive informed decisions and unlock business potential through advanced data-driven strategies.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   }, {
     image:<AccountCircleIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"Cloud Computing",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Unlock agility with Cloud Computing solutions. Scale, innovate, and optimize operations for a resilient and future-ready business.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   }, 
   {
     image:<AddShoppingCartIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"CRM",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Enhance relationships with CRM solutions. Streamline customer interactions, boost sales, and foster long-lasting connections for business success.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   }, 
   {
     image:<AddTaskIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"Buisness Consulting",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Elevate your business with expert Consulting. Gain strategic insights, optimize operations, and drive growth for sustained success.",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   }, 
   {
     image:<AddToDriveIcon sx={{width:50, height:50, color:"#47d7ac"}}/>,
     title:"Finance Consulting",
-    description:"A Short Description about services",
-    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Read More</Button>
+    description:"Empower your business with Finance Consulting. Gain strategic financial insights, optimize operations, and drive growth for sustained success",
+    button:<Button sx={{color:"#000", fontWeight:"bold",pr:2,pl:2, "&:hover":{backgroundColor:"#47d7ac", color:"#fff", transition:"0.5s all"}}}>Get Service</Button>
   },
 ]
 
@@ -102,7 +103,7 @@ const Services = () => {
         </Grid>
       </Box>
       <Container>
-        <Grid container sx={{textAlign:"center", mt:5}}>
+        <Grid container sx={{textAlign:"center"}}>
           {itemData.map((item, key)=>(
             <Grid item xs={12} md={6} lg={4} key={key} sx={{mb:5}}>
              <Typography variant="h1">
@@ -111,7 +112,7 @@ const Services = () => {
              <Typography variant="h5">
               {item.title}
              </Typography>
-             <Typography variant="p" component="p" sx={{mb:3}}>
+             <Typography variant="p" component="p" sx={{mb:3, fontSize:14, p:3}}>
               {item.description}
              </Typography>
              {item.button}
@@ -119,14 +120,7 @@ const Services = () => {
           ))}
         </Grid>
       </Container>
-      <Container sx={{textAlign:"center", mt:10}}>
-          <Typography variant="h6" >
-            Need Query ? Feel Free to ask at any time
-          </Typography>
-          <Typography variant="h4" component="p" sx={{mt:2,}}>
-              email@email.com
-          </Typography>
-      </Container>
+     
     </>
   )
 }
